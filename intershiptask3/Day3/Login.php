@@ -37,7 +37,7 @@
 </head>
 <body>
 	<!-- Login page -->
-	<h3> Login Form </h3>
+	<h2> Login Form </h2>
 
          <form action="" method="POST">
 
