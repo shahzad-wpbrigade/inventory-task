@@ -2,9 +2,11 @@
 
 session_start();
 include_once 'conn.php';
+
 $profile = $_SESSION['useremail'];
+
 //check the session is Create or Not
-if ($profile==true) {
+if ( $profile == true ) {
 	header('location:dash.php');
 }
 else{
@@ -16,7 +18,7 @@ echo "Welcome".$_SESSION['username'] ."<br>";
 
 echo "Welcome".$_SESSION['useremail'];
 ?>
-<!--  Start the HTML -->
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -26,7 +28,6 @@ echo "Welcome".$_SESSION['useremail'];
 	<h1> Welcome to the Admin Page</h1>
          <form>
 	     <a href="Logout.php"><input type="submit" name="Logout" value="Logout"></a>
-         <!-- We Close the Form Tag -->
-	  </form>
+	 </form>
 </body>
 </html>
