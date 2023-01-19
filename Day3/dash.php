@@ -27,6 +27,6 @@ echo "Welcome".$_SESSION['useremail'];
          <form>
 	     <a href="Logout.php"><input type="submit" name="Logout" value="Logout"></a>
          <!-- We Close the Form Tag -->
-	      </form>
+	  </form>
 </body>
 </html>
