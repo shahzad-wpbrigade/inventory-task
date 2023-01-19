@@ -4,7 +4,7 @@
    
      //  We use the isset Function which the check the data is fill in the Form
 
-   if (isset($_POST['Submit'])) {
+   if ( isset($_POST['Submit']) ) {
 
     // Database Connection File and use the Include_once keyword and conn.php is the connection file
     include_once 'conn.php';
@@ -23,12 +23,14 @@
        if ( $count == 1 ){
             //We create the Session variable and values
            $_SESSION['username']  = $username;
+           
            $_SESSION['useremail'] = $useremail;
+           
            header('location:dash.php');
        }
        else
        {
-          echo "Login Faild";
+          echo 'Login Faild';
        }
    }
 ?>
