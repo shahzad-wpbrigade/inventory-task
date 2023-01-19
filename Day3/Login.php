@@ -8,48 +8,31 @@
 
    if (isset($_POST['Submit'])) {
 
-    // Database Connection File
+    // Database Connection File and use the Include_once keyword and conn.php is the connection file
+    include_once 'conn.php';
 
-    include'conn.php';
-
-       $Username = $_POST['Username'];
-       $UserEmail = $_POST['UserEmail'];
+       $username = $_POST['username'];
+       $useremail = $_POST['useremail'];
 
        // This is the Select query where we select the data form database 
-
-       $query= "SELECT * FROM `run` WHERE d_username='$Username' AND   d_useremail='$UserEmail' ";
-
+       $query= "SELECT * FROM `run` WHERE d_username='$username' AND   d_useremail='$userEmail' ";
+       
        // we RUN THE QUERY THROUGH THE mysqli_query
-
        $exu=mysqli_query($con,$query);
-
        $count=mysqli_num_rows($exu);
-
-       if ($count == 1 ){
-
+       if ($count==1){
             //We create the Session variable and values
-
-           $_SESSION['Username'] = $Username;
-
-           $_SESSION['UserEmail'] = $UserEmail;
-
+           $_SESSION['username'] = $username;
+           $_SESSION['useremail'] = $useremail;
            header('location:dash.php');
        }
-
        else
        {
           echo "Login Faild";
        }
-       
    }
 ?>
-
-
-
-
-
-
-
+<!-- Start HtML-->
 <!DOCTYPE html>
 <html>
 <head>
@@ -59,11 +42,11 @@
 
    <h1> Login Form </h1>
 
-    <form action="" method="POST">
+    <form action="Login.php" method="POST">
 
-         Username<input type="text" name="Username"><br><br>
+         Username<input type="text" name="username"><br><br>
 
-         UserEmail<input type="email" name="UserEmail"><br><br>
+         UserEmail<input type="email" name="useremail"><br><br>
 
          <input type="submit" name="Submit">
 
