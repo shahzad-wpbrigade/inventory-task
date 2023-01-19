@@ -1,7 +1,5 @@
 <?php
-
      //  We start the Session
-
    session_start();
    
      //  We use the isset Function which the check the data is fill in the Form
@@ -11,7 +9,7 @@
     // Database Connection File and use the Include_once keyword and conn.php is the connection file
     include_once 'conn.php';
 
-       $username = $_POST['username'];
+       $username  = $_POST['username'];
        $useremail = $_POST['useremail'];
 
        // This is the Select query where we select the data form database 
