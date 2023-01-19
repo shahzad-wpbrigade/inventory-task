@@ -16,9 +16,9 @@
        $query= "SELECT * FROM `run` WHERE d_username='$username' AND   d_useremail='$userEmail' ";
        
        // we RUN THE QUERY THROUGH THE mysqli_query
-       $exu = mysqli_query($con,$query);
-       
-       $count = mysqli_num_rows($exu);
+         $exu  = mysqli_query($con,$query);
+         
+        $count = mysqli_num_rows($exu);
        
        if ( $count == 1 ){
             //We create the Session variable and values
