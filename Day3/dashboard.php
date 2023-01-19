@@ -3,14 +3,14 @@
 session_start();
 include_once 'conn.php';
 
-$profile = $_SESSION['useremail'];
+$profile = $_SESSION ['useremail'];
 
 //check the session is Create or Not
 if ( $profile == true ) {
 	header('location:dash.php');
 }
 else{
-	header('location:Login.php');
+	header( 'location:Login.php' );
 }
 // Show the Username And Useremail
 
