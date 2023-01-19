@@ -20,7 +20,7 @@
          
         $count = mysqli_num_rows($exu);
        
-       if ( $count == 1 ){
+       if ( $count === 1 ){
             //We create the Session variable and values
            $_SESSION['username']  = $username;
            
