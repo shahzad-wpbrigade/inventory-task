@@ -4,7 +4,7 @@ session_start();
 include_once 'conn.php';
 $profile = $_SESSION['useremail'];
 //check the session is Create or Not
-if ($profile == true) {
+if ($profile==true) {
 	header('location:dash.php');
 }
 else{
