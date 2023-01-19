@@ -10,7 +10,7 @@
     include_once 'conn.php';
 
        $username  = $_POST['username'];
-       $useremail = $_POST['useremail'];
+      $useremail  = $_POST['useremail'];
 
        // This is the Select query where we select the data form database 
        $query= "SELECT * FROM `run` WHERE d_username='$username' AND   d_useremail='$userEmail' ";
