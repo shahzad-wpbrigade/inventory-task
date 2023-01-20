@@ -66,6 +66,9 @@ Division($ans);
 ?>
 <!DOCTYPE html>
 <html>
+ <head>
+  <title> Simple calculator </title>
+  <head>
 <body>
 
 <form action="simplecalculator.php" method="post">
