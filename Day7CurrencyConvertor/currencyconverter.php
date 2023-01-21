@@ -106,7 +106,7 @@ US_to_Japanese();
 US_to_Pakistan();
 US_to_Philippine();
 
-}
+}//end isset function
 
 ?>
 
