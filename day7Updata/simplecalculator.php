@@ -102,6 +102,7 @@ Division();
 <!DOCTYPE html>
 <html>
  <head>
+  <title> Simple Calculator </title>
   <head>
 <body>
 
