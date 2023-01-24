@@ -12,14 +12,14 @@ function Sum() {
 
        if ( $num2 == '' ) {
           echo 'Number Two is Null';
-        }
+       }
 
-        else
-        {
+       else {
         $ans = $num1 + $num2 ;
          echo ($ans);
          
-        } 
+        }
+        
         }
 }
 
