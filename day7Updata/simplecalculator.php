@@ -36,8 +36,7 @@ function Subtraction() {
     if ($num2=='') {
       echo 'Number Two is Null';
     }
-       else
-       {
+       else {
         $ans = $num1 - $num2 ;
         echo ($ans);
        }
@@ -55,8 +54,7 @@ function Multiplication() {
        if ( $num2 == '' ) {
           echo 'Number Two is Null';
        }
-        else
-        {
+        else {
          $ans = $num1 * $num2;
          echo($ans);
         } 
@@ -80,8 +78,7 @@ function Division() {
           echo 'Number two is null';
         }
 
-        else
-        {
+        else {
        $ans = $num1 / $num2;
         echo($ans);  
         }
